@@ -10,7 +10,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="714dp"
         android:orientation="vertical"
         android:padding="16dp">
 
@@ -28,6 +28,12 @@
             android:layout_marginTop="4dp"
             android:textAppearance="?attr/textAppearanceBody2"
             tools:text="England" />
+
+        <TextView
+            android:id="@+id/textViewTeamName"
+            android:layout_width="match_parent"
+            android:layout_height="631dp"
+            android:text="TextView" />
 
     </LinearLayout>
 

@@ -14,8 +14,8 @@
         android:id="@+id/textView3"
         android:layout_width="333dp"
         android:layout_height="98dp"
-        android:layout_marginTop="116dp"
-        android:text="Amo CBF"
+        android:layout_marginTop="80dp"
+        android:text="@string/main_title"
         android:textColor="@color/white"
         android:shadowColor="#AA000000"
         android:shadowDx="1"
@@ -27,48 +27,53 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- TEXTO PERGUNTA -->
-
-    <!-- CAMPO DE TEXTO -->
-
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="393dp"
-        android:layout_height="41dp"
-        android:layout_marginBottom="32dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="8dp"
         android:shadowColor="#AA000000"
         android:shadowDx="1"
         android:shadowDy="1"
         android:shadowRadius="1"
-        android:text="Escolha seu time do coração"
+        android:text="@string/team_choice_label"
         android:textColor="@color/white"
-        android:textSize="25dp"
+        android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/time"
-        app:layout_constraintStart_toStartOf="@+id/time" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/time"
-        android:layout_width="264dp"
-        android:layout_height="63dp"
-        android:layout_marginTop="148dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:hint="@string/team_name_hint"
+        android:inputType="textCapWords"
         android:shadowColor="#AA000000"
         android:shadowDx="1"
         android:shadowDy="1"
         android:shadowRadius="1"
-        android:text=""
-        android:textSize="25dp"
         android:textColor="@color/white"
+        android:textColorHint="#A0FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.204"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.55" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="120dp"
-        android:layout_height="53dp"
-        android:text="Buscar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:backgroundTint="#4682B4"
+        android:text="@string/search_button"
+        app:layout_constraintEnd_toEndOf="@+id/time"
         app:layout_constraintStart_toStartOf="@+id/time"
         app:layout_constraintTop_toBottomOf="@+id/time" />
 

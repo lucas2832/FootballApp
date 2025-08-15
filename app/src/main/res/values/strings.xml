@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">FootballApp</string>
+    <string name="main_title">Amo CBF</string>
+    <string name="team_choice_label">Escolha seu time do coração</string>
+    <string name="team_name_hint">Nome do time</string>
+    <string name="search_button">Buscar</string>
+    <string name="error_empty_team_name">Por favor, insira o nome de um time</string>
 </resources>

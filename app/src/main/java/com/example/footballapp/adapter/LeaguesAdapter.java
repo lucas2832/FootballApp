@@ -34,6 +34,8 @@ public class LeaguesAdapter extends RecyclerView.Adapter<LeaguesAdapter.LeagueVi
         League league = leagues.get(position);
         holder.leagueName.setText(league.getName());
         holder.countryName.setText(league.getCountry());
+        String teamsText = String.join("\n", league.getTeams());
+        holder.teamName.setText(teamsText);
     }
 
     @Override
@@ -44,11 +46,13 @@ public class LeaguesAdapter extends RecyclerView.Adapter<LeaguesAdapter.LeagueVi
     public static class LeagueViewHolder extends RecyclerView.ViewHolder {
         final TextView leagueName;
         final TextView countryName;
+        final TextView teamName;
 
         public LeagueViewHolder(@NonNull View itemView) {
             super(itemView);
             leagueName = itemView.findViewById(R.id.textViewLeagueName);
             countryName = itemView.findViewById(R.id.textViewCountry);
+            teamName = itemView.findViewById(R.id.textViewTeamName);
         }
     }
 }
